@@ -1,0 +1,52 @@
+package com.mycompany.employeeob;
+
+
+public class Employee 
+{
+    private String empname;
+    private float empbasicsalary;
+    public float bonus;
+    public void setName(String en)
+    {
+        empname=en;
+    }
+    public void setSalary(float es)
+    {
+        empbasicsalary=es;
+    }
+    public String getName()
+    {
+        return empname;
+    }
+    public float getSalary()
+    {
+        return empbasicsalary;
+    }
+    public Employee(float bonus)
+    {
+        this.bonus=bonus;
+    }
+    public float calculateNetsalary()
+    {
+        return empbasicsalary+bonus;
+    }
+    
+}
+
+
+
+package com.mycompany.employeeob;
+public class Employeeob {
+    public static void main(String[] args) 
+    {
+       Employee e1=new Employee(5000.00f);
+       e1.setName("Sampath");
+       e1.setSalary(25000.00f);
+       
+        System.out.println("Employee Name:"+e1.getName());
+        System.out.println("Basic Salary:"+e1.getSalary());
+        System.out.println("bonus:"+e1.bonus);
+        System.out.println("Bonus Amount:"+e1.calculateNetsalary());
+   
+    }
+}
