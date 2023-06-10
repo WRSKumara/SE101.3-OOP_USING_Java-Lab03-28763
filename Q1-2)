@@ -1,0 +1,56 @@
+package com.mycompany.employeeob;
+
+
+public class Employee 
+{
+    private String empname;
+    private int empage;
+    private float empsalary;
+    public  void setName(String en)
+    {
+        this.empname=en;
+    }
+    public void setAge(int ea)
+    {
+        this.empage=ea;
+    }
+    public void setSalary(float es)
+    {
+       this.empsalary=es;
+    }
+    public String getName()
+    {
+        return empname;
+    }
+    public int getAge()
+    {
+       return empage; 
+    }
+    public float getSalary()
+    {
+        return empsalary;
+    }
+    
+}
+
+
+
+package com.mycompany.employeeob;
+
+
+public class Employeeob {
+
+    public static void main(String[] args) 
+    {
+        
+        Employee e1=new Employee();
+        e1.setName("Sampath");
+        e1.setAge(23);
+        e1.setSalary(25000.00f);
+        
+        System.out.println("Employee Name:"+e1.getName());
+        System.out.println("Age:"+e1.getAge());
+        System.out.println("Salary:"+e1.getSalary());
+        
+    }
+}
