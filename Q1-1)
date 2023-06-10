@@ -1,0 +1,34 @@
+package com.mycompany.employeeob;
+
+
+public class Employee 
+{
+    private String empname;
+    private int empage;
+    private float empsalary;
+    public void seName(String en)
+    {
+        empname=en;
+    }
+    public void setAge(int ea)
+    {
+        empage=ea;
+    }
+    public void setSalary(float es)
+    {
+        empsalary=es;
+    }
+    public String getName()
+    {
+        return empname;
+    }
+    public int getAge()
+    {
+       return empage; 
+    }
+    public float getSalary()
+    {
+        return empsalary;
+    }
+    
+}
